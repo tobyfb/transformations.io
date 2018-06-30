@@ -1,8 +1,7 @@
-baseurl = "https://transformations.io"
+baseurl = "https://example.org/"
 languageCode = "en-us"
-title = "transformations"
-theme = "hugo-natrium"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+title = "Natrium Theme"
+theme = "hugo-natrium-theme"
 preserveTaxonomyNames = true
 rssLimit = 10
 paginate = 10
@@ -14,7 +13,7 @@ pygmentsStyle = "native"
     tag = "tags"
 
 [permalinks]
-    post = "/post/:year/:month/:slug/"
+    post = "/:slug/"
     page = "/:slug/"
 
 [[menu.main]]
