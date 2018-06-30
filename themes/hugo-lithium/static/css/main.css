@@ -94,13 +94,13 @@ code {
   max-width: 700px;
   margin: 40px auto 10px;
   padding: 0 15px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.7;
   color: #333;
 }
 
 .article-title {
-  font-size: 34px;
+  font-size: 22px;
   color: #222;
   margin: 0;
   line-height: 1.3;
