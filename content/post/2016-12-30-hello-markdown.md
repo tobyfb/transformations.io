@@ -1,7 +1,6 @@
 ---
 title: "A Plainer Markdown Post"
-date: "2018-06-30T21:49:57-07:00"
-slug: "plainer-markdown"
+date: "2018-06-29T21:49:57"
 ---
 
 This is a post written in plain Markdown (`*.md`) instead of R Markdown (`*.Rmd`). The major differences are:
