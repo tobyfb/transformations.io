@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Transformations.io"
+title = "Transformations"
 theme = "hugo-xmin"
 googleAnalytics = ""
 disqusShortname = ""
@@ -9,8 +9,8 @@ preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
 
 [permalinks]
-    post = "/post/:year/:month/:slug/"
-    note = "/note/:year/:month/:slug/"
+    post = "/post/:year/:month/:day/:slug/"
+    note = "/note/:year/:month/:day/:slug/"
 
 [[menu.main]]
     name = "Home"
@@ -29,7 +29,7 @@ footnotereturnlinkcontents = "↩"
     url = "/tags/"
     weight = 4
 [[menu.main]]
-    name = "RSS"
+    name = "Subscribe"
     url = "/index.xml"
 
 [params]
