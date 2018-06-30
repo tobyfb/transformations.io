@@ -1,42 +1,37 @@
-baseurl = "https://transformations.io"
+baseurl = "/"
 languageCode = "en-us"
-title = "transformations"
-theme = "hugo-natrium"
+title = "Transformations"
+theme = "hugo-xmin"
+googleAnalytics = ""
+disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
-rssLimit = 10
-paginate = 10
-pygmentsCodefences = true
-pygmentsStyle = "native"
-
-[taxonomies]
-    category = "categories"  
-    tag = "tags"
+footnotereturnlinkcontents = "↩"
 
 [permalinks]
     post = "/post/:year/:month/:slug/"
-    page = "/:slug/"
+    note = "/note/:year/:month/:slug/"
 
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
 [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = -110
-    
-[[menu.main]]
-    name = "Tags"
-    url = "/tags"
-    weight = -120
-
+    weight = 2
 [[menu.main]]
     name = "Categories"
-    url = "/categories"
-    weight = -130
+    url = "/categories/"
+    weight = 3
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+[[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
 
 [params]
-    description = ""
-
-    [params.logo]
-    url = "logo.png"
-    width = 50
-    height = 50
-    alt = "Logo"
+    description = "A website built through Hugo and blogdown."
+    footer = "&copy; [Yihui Xie](https://yihui.name) 2017 -- 2018 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
