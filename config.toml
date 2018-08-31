@@ -1,10 +1,13 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Transformations"
-theme = "hugo-lithium"
+theme = "hugo-xmin"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+taxonomies:
+    tag: tags
 
 [permalinks]
     post = "/:year/:month/:slug/"
