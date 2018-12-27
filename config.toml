@@ -1,36 +1,108 @@
-baseurl = "/"
-languageCode = "en-us"
-title = "Transformations"
-theme = "hugo-xmin"
-googleAnalytics = ""
-disqusShortname = ""
+# Set base URL for site - should end with a trailing slash
+baseUrl = "/"
+
+title = "transformations.io"
+theme = "slick"
+
+languageCode = "en"
+defaultContentLanguage = "en-us"
+
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
-taxonomies:
-    tag: tags
+# Will appear below the footer links with a © sign and the current year
+copyright = "transformations.io — All rights reserved."
+
+
+pygmentsCodefences = true               # Enable highlighting inside codefences
+pygmentsCodeFencesGuessSyntax = true    # Highlight code without language tag
+pygmentsUseClasses = true               # Use external style sheet
+pygmentsUseClassic = false              # Force use of chroma
+
+canonifyURLs = true
+
+# Configure pagination
+Paginate = 10
+PaginatePath = "page"
 
 [permalinks]
     post = "/:year/:month/:slug/"
 
-[[menu.main]]
-    name = "About"
-    url = "/about/"
-[[menu.main]]
-
 [params]
-    description = "A website built through Hugo and blogdown."
+    # Site subtitle
+    subtitle = "an outlet for thinking and remembering"
 
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.11.0"
-    highlightjsCDN = "//cdn.bootcss.com"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
+    # Site description
+    description = "an outlet for thinking and remembering"
 
-    MathJaxCDN = "//cdn.bootcss.com"
-    MathJaxVersion = "2.7.1"
+    # Favicon file (relative to baseURL)
+    favicon = "img/favicon.png"
 
-    [params.logo]
-    url = "logo.png"
-    width = 50
-    height = 50
-    alt = "Logo"
+    # Enables custom date format (optional, the default is MM-DD-YYYY)
+    # For reference to date and time templating, see:
+    # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
+    datefmt = "2006-01-02"
+
+    # Decide if only summaries are shown on the main page or the full content
+    showfullcontent = true
+
+    # Uses Hugo internal templates if set
+    opengraph = false
+    schema = false
+    twitter_cards = false
+
+
+# Define all supported taxonomies (add series to the default)
+[taxonomies]
+    tags = "tags"
+    categories = "categories"
+    # series = "series"
+
+
+[author]
+    name = "toby"
+    email = "transformations@fastmail.com"
+
+
+[menu]
+
+    # Configure main menu entries (header)
+    # Currently set to list all taxonomies and posts
+    [[menu.main]]
+        identifier = "post"
+        name = "Posts"
+        url = "/posts/"
+        weight = 1
+
+    [[menu.main]]
+        identifier = "categories"
+        name = "Categories"
+        url = "/categories/"
+        weight = 2
+
+    [[menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+        weight = 2
+
+    #[[menu.main]]
+    #    identifier = "series"
+    #    name = "Series"
+    #    url = "/series/"
+    #    weight = 2
+
+    # Add some footer links to your likings
+    [[menu.footer]]
+        name = "GitHub"
+        url = "https://github.com/tobyfb"
+        weight = 1
+
+    #[[menu.footer]]
+    #    name = "Medium"
+    #    url = "https://medium.com/@someauthor"
+    #    weight = 3
+
+    #[[menu.footer]]
+    #    name = "Twitter"
+    #    url = "https://twitter.com/someauthor"
+    #    weight = 2
