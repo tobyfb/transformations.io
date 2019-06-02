@@ -17,6 +17,7 @@ series: null
 
 Hugo is a static site engine written in Go.
 
+Go go Inspector Gadget
 
 It makes use of a variety of open source projects including:
 
